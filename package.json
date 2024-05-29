@@ -1,0 +1,61 @@
+{
+  "name": "ordo",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "Please-use-yarn"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --check .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --max-warnings 0 ."
+    ]
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.1",
+    "@studio-freight/lenis": "^1.0.42",
+    "@tanstack/react-query": "^5.32.1",
+    "axios": "^1.5.1",
+    "framer-motion": "^11.1.7",
+    "next": "14.2.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.46.1",
+    "react-toastify": "^10.0.5",
+    "sharp": "^0.33.3",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@iconify/react": "^4.1.1",
+    "@tanstack/react-query-devtools": "^5.32.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.1",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
