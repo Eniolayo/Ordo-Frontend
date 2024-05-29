@@ -1,0 +1,7 @@
+services:
+  nextapp:
+    container_name: myhives-website
+    image: myhives-web
+    build: .
+    ports:
+      - "3000:3000"
